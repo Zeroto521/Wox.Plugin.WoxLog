@@ -1,0 +1,12 @@
+{
+    "ID": "4889b68bdc5c4582b338d76aa406b813",
+    "ActionKeyword": "*",
+    "Name": "WoxLog",
+    "Description": "Log wox behaviors.",
+    "Author": "Zeroto521",
+    "Version": "0.0.1",
+    "Language": "python",
+    "Website": "",
+    "IcoPath": "Images\\favicon.png",
+    "ExecuteFileName": "main.py"
+}
