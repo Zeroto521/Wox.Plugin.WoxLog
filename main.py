@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import os
 import time
 
@@ -5,7 +7,7 @@ from wox import Wox, WoxAPI
 
 
 PATH = '.'
-fileName = os.path.join(PATH, 'WoxKeywords.log')
+logFilePath = os.path.join(PATH, 'WoxKeywords.log')
 
 
 class Main(Wox):
@@ -20,18 +22,12 @@ class Main(Wox):
             list -- Wox json list
         """
 
-        result = []
         param = param.strip()
         message = "{}, {}\n"
-        with open(fileName, 'a+', encoding='utf-8') as f:
-            if os.path.exists(fileName):
-                date = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-                message = message.format(date, param)
-            else:
-                message = message.format("date", "keyword")
+        with open(logFilePath, 'a+', encoding='utf-8') as f:
+            date = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+            message = message.format(date, param)
             f.write(message)
-
-        return result
 
 
 if __name__ == '__main__':
