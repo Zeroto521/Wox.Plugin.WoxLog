@@ -8,5 +8,5 @@
     "Language": "python",
     "Website": "https://github.com/Zeroto521/Wox.Plugin.WoxLog",
     "IcoPath": "Images\\favicon.png",
-    "ExecuteFileName": "main.py"
+    "ExecuteFileName": "launcher.py"
 }
