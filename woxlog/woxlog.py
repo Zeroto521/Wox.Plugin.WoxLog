@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import os
 import time
 
 from wox import Wox, WoxAPI
 
-
-PATH = '.'
-logFilePath = os.path.join(PATH, 'WoxKeywords.log')
+from .constants import *
 
 
 class Main(Wox):
@@ -28,7 +25,3 @@ class Main(Wox):
             date = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
             message = message.format(date, param)
             f.write(message)
-
-
-if __name__ == '__main__':
-    Main()

@@ -4,9 +4,9 @@
     "Name": "WoxLog",
     "Description": "Log wox behaviors.",
     "Author": "Zeroto521",
-    "Version": "0.0.1",
+    "Version": "0.0.2",
     "Language": "python",
     "Website": "https://github.com/Zeroto521/Wox.Plugin.WoxLog",
     "IcoPath": "Images\\favicon.png",
-    "ExecuteFileName": "launcher.py"
+    "ExecuteFileName": "main.py"
 }
